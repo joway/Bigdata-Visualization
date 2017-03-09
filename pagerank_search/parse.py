@@ -20,6 +20,6 @@ with open('data/result.csv', 'r') as csvfile:
 for node in nodes:
     DATA['nodes'].append({"id": node , "group": int(node) % 3})
 
-with open('file.json', 'w') as jsonfile:
+with open('data/result.json', 'w') as jsonfile:
     json_data = json.dumps(DATA)
     jsonfile.write(json_data)

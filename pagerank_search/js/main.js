@@ -64,7 +64,7 @@ var simulation = d3.forceSimulation()
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 
-d3.json("file.json", function (error, jsonData) {
+d3.json("data/result.json", function (error, jsonData) {
     if (error) throw error;
     var graph = cleanData(jsonData);
     if (graph.nodes.length <= 1) {
